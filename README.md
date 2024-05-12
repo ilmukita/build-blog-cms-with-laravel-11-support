@@ -30,6 +30,7 @@
 
 ### Chapter 01
 
-| Code        | Title                    |
-| ----------- | ------------------------ |
-| C01E001P001 | Setup project Laravel 11 |
+| Code                                                                                                                                                                       | Title                    |
+| -------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------ |
+| [C01E001P001](https://github.com/ilmukita/build-blog-cms-with-laravel-11-support/blob/main/Chapter%2001/Episode%20001/C01E001P001%20-%20Setup%20project%20Laravel%2011.md) | Setup project Laravel 11 |
+| C01E002P001                                                                                                                                                                | Install Bootstrap CSS    |
