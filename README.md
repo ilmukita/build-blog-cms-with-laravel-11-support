@@ -26,11 +26,12 @@
 
 - VSCode [visualstudio](https://code.visualstudio.com/)
 
-## Support
+## Build Blog CMS (content management system) with Laravel 11
 
 ### Chapter 01
 
-| Code                                                                                                                                                                       | Title                    |
-| -------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------ |
-| [C01E001P001](https://github.com/ilmukita/build-blog-cms-with-laravel-11-support/blob/main/Chapter%2001/Episode%20001/C01E001P001%20-%20Setup%20project%20Laravel%2011.md) | Setup project Laravel 11 |
-| [C01E002P001](https://github.com/ilmukita/build-blog-cms-with-laravel-11-support/blob/main/Chapter%2001/Episode%20002/C01E002P001/C01E002P001%20-%20Install%20Bootstrap%20CSS.md)                                                                                                                                                                | Install Bootstrap CSS    |
+| Code                                                                                                                                                                              | Title                    | Video                                   | Article |
+| --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------ | --------------------------------------- | ------- |
+| [C01E001P001](https://github.com/ilmukita/build-blog-cms-with-laravel-11-support/blob/main/Chapter%2001/Episode%20001/C01E001P001%20-%20Setup%20project%20Laravel%2011.md)        | Setup project Laravel 11 | [Youtube](https://youtu.be/6qladUUkZSY) |         |
+| [C01E002P001](https://github.com/ilmukita/build-blog-cms-with-laravel-11-support/blob/main/Chapter%2001/Episode%20002/C01E002P001/C01E002P001%20-%20Install%20Bootstrap%20CSS.md) | Install Bootstrap CSS    | [Youtube](https://youtu.be/uWkY-4Y4Oxc) |         |
+| C01E002P002                                                                                                                                                                       | Membuat layout utama     | Youtube                                 |         |
