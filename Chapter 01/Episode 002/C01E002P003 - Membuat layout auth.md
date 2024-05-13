@@ -1,4 +1,4 @@
-# C01E002P003 - Membuat layout auth auth
+# C01E002P003 - Membuat layout auth
 
 ## Layout view
 
