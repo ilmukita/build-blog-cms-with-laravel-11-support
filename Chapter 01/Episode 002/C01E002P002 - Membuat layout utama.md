@@ -1,8 +1,4 @@
-
-
-# Membuat layout utama
-
-
+# C01E002P002 - Membuat layout utama
 
 ## View layout
 
@@ -24,7 +20,6 @@ resources\views\layouts\site\site-layout.blade.php
 </body>
 
 </html>
-
 ```
 
 ## Controller home
@@ -32,8 +27,6 @@ resources\views\layouts\site\site-layout.blade.php
 ```bash
  php artisan make:controller Site/HomeController
 ```
-
-
 
 app\Http\Controllers\Site\HomeController.php
 
@@ -64,7 +57,6 @@ resources\views\site\home.blade.php
 @section('content')
    Home Page
 @endsection
-
 ```
 
 ## Route
@@ -74,5 +66,3 @@ routes\web.php
 ```php
 Route::get('/', [App\Http\Controllers\Site\HomeController::class, 'index'])->name('site.home');
 ```
-
-
