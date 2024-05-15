@@ -77,7 +77,7 @@ resources\views\layouts\auth\_footer.blade.php
 
 ## Ref
 
-- SB Admin [A Bootstrap 5 admin template]([Start Bootstrap](https://startbootstrap.com/template/sb-admin#google_vignette)
+- SB Admin [A Bootstrap 5 admin template](https://startbootstrap.com/template/sb-admin#google_vignette)
 
 - SASS lang [sass-lang](https://sass-lang.com/)
 
