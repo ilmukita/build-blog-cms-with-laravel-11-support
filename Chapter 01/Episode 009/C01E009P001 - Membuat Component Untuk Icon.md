@@ -35,8 +35,6 @@ class BsIcon extends Component
         return view('components.icon.bs-icon');
     }
 }
-
-
 ```
 
 resources\views\components\icon\bs-icon.blade.php
@@ -54,3 +52,5 @@ resources\views\components\icon\bs-icon.blade.php
 ## Ref
 
 - https://laravel.com/docs/11.x/blade#components
+
+
