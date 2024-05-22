@@ -96,5 +96,12 @@ resources\views\layouts\dashboard\_sidenav.blade.php
       @endif
    @endforeach
 @endforeach
-
 ```
+
+# Ref
+
+- [Blade Templates - Laravel 11.x - The PHP Framework For Web Artisans](https://laravel.com/docs/11.x/blade#blade-directives)
+
+- [Blade Templates - Laravel 11.x - The PHP Framework For Web Artisans](https://laravel.com/docs/11.x/blade#the-loop-variable)
+
+
