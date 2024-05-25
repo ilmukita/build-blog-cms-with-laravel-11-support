@@ -98,14 +98,14 @@ class TagTableSeeder extends Seeder
      */
     public function run(): void
     {
-        $tagsDummies = require_once database_path("dummies/TagDummy.php");
+        $tagDummy = require_once database_path("dummy/TagDummy.php");
 
         $inserts = [];
 
-        foreach ($tagsDummies as $tagDummy) {
+        foreach ($tagDummy as $tag) {
             $inserts[] = [
-                'title' => $tagDummy,
-                'slug' => Str::slug($tagDummy),
+                'title' => $tag,
+                'slug' => Str::slug($tag),
                 'created_at' => now(),
                 'updated_at' => now()
             ];
@@ -149,7 +149,7 @@ php artisan db:seed --class=TagTableSeeder
 
 ### Tag Dummy
 
-database\dummies\TagDummy.php
+database\dummy\TagDummy.php
 
 ```php
 <?php
