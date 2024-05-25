@@ -136,7 +136,6 @@ class DatabaseSeeder extends Seeder
       ]);
    }
 }
-
 ```
 
 ### Running Seeders
@@ -171,14 +170,12 @@ return [
     'laravel add bootstrap',
     'Install Bootstrap CSS',
     'Tutorial Laravel 11 Blog CMS',
-    'Content Management System',
     'Build Blog CMS with Laravel 11',
     'laravel 11 project',
     'laravel 11 new features',
     'laravel 11 tutorial',
     'laravel blog with admin panel',
     "youtube",
-    "laravel 11",
     "php 8.2",
     "programming",
     "tutorial",
@@ -253,7 +250,6 @@ return [
     "server-side scripting",
     "code repository",
     "web hosting",
-    "container orchestration",
     "integrated development environment",
     "local development",
     "backend development",
@@ -271,7 +267,6 @@ return [
     "responsive web design",
     "cloud computing",
     "serverless computing",
-    "microservices architecture",
     "network programming",
     "desktop application",
     "graphical user interface",
@@ -309,7 +304,6 @@ return [
     "server-side scripting language",
     "front-end framework",
     "programming language syntax",
-    "integrated development environment",
     "software development lifecycle",
     "mobile application framework",
     "game engine",
@@ -393,25 +387,8 @@ return [
     "hybrid cloud environments",
     "multi-cloud deployments",
     "serverless computing models",
-    "microservices architecture",
-    "container orchestration platforms",
-    "continuous integration/continuous deployment pipelines",
     "automated testing frameworks",
     "agile software development methodologies",
-    "devops practices",
-    "site reliability engineering",
-    "infrastructure as code",
-    "configuration management tools",
-    "monitoring and logging solutions",
-    "incident response automation",
-    "security as code",
-    "cloud-native development",
-    "serverless computing",
-    "microservices architecture",
-    "container orchestration",
-    "continuous integration and continuous deployment",
-    "automated testing",
-    "agile software development",
     "devops practices",
     "site reliability engineering",
     "infrastructure as code",
@@ -421,6 +398,7 @@ return [
     "security as code",
     "cloud-native development"
 ];
+
 ```
 
 ## Ref
