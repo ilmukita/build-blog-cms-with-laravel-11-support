@@ -38,7 +38,6 @@ return new class extends Migration
         Schema::dropIfExists('tags');
     }
 };
-
 ```
 
 ### Migrate Tabel
@@ -115,6 +114,29 @@ class TagTableSeeder extends Seeder
         DB::table('tags')->insert($inserts);
     }
 }
+```
+
+database\seeders\TagTableSeeder.php
+
+```php
+<?php
+
+namespace Database\Seeders;
+
+use Illuminate\Database\Seeder;
+
+class DatabaseSeeder extends Seeder
+{
+   public function run(): void
+   {
+
+      $this->call([
+         // another code ...
+         TagTableSeeder::class,
+      ]);
+   }
+}
+
 ```
 
 ### Running Seeders
@@ -410,5 +432,3 @@ return [
 - https://laravel.com/docs/11.x/eloquent-factories
 
 - https://fakerphp.org/
-
-
