@@ -1,7 +1,5 @@
 # C01E012P002 - Menampilkan Data Tag
 
-
-
 ## TagController@index
 
 app\Http\Controllers\Dashboard\TagController.php

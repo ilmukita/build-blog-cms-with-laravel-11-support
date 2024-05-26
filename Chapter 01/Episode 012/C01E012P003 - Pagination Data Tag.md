@@ -41,5 +41,3 @@ public function boot()
 ## Ref
 
 - [Database: Pagination - Laravel 11.x - The PHP Framework For Web Artisans](https://laravel.com/docs/11.x/pagination)
-
-
