@@ -51,6 +51,38 @@ app\Http\Controllers\Dashboard\TagController.php
     }
 ```
 
+## View
+
+resources\views\dashboard\tag\index.blade.php
+
+```php
+<button id="buttonEdit" data-route="{{ route('dashboard.tag.edit', ['slugId' => $tag->id]) }}"
+                           type="button" class="btn btn-primary">Edit</button>
+```
+
+## JS
+
+resources\js\views\dashboard\tag\index.view.js
+
+```js
+function handleEdit() {
+    const buttonEdit = document.querySelectorAll("button#buttonEdit");
+    buttonEdit.forEach((btnEdit) => {
+        const route = btnEdit.getAttribute("data-route");
+        btnEdit.addEventListener("click", () => {
+            window.location = route;
+        });
+    });
+} 
+```
+
+```js
+
+window.addEventListener("DOMContentLoaded", () => {
+    handleEdit();
+});
+```
+
 ## Config Vite
 
 vite.config.js
@@ -61,6 +93,7 @@ export default defineConfig({
         laravel({
             input: [
                 // another code...
+                "resources/js/views/dashboard/tag/index.view.js",
                 "resources/js/views/dashboard/tag/edit.view.js",
             ],
             refresh: true,
