@@ -77,7 +77,6 @@ function handleEdit() {
 ```
 
 ```js
-
 window.addEventListener("DOMContentLoaded", () => {
     handleEdit();
 });
