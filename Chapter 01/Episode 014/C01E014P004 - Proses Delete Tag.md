@@ -60,5 +60,3 @@ window.addEventListener("DOMContentLoaded", () => {
     handleDelete();
 });
 ```
-
-

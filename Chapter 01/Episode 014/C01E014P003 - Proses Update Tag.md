@@ -15,5 +15,3 @@ app\Http\Controllers\Dashboard\TagController.php
         return redirect(route('dashboard.tag'));
     }
 ```
-
-
