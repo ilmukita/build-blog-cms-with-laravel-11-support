@@ -40,7 +40,6 @@ class Toaster
         self::make($title, $message, 'danger');
     }
 }
-
 ```
 
 ## Toaster (JS)
@@ -163,7 +162,7 @@ class Toaster {
     }
 }
 
-const toatser = new Toaster();
+const toaster = new Toaster();
 
 const loadToaster = () => {
     const toastTemporary = document.getElementById("toastTemporary");
@@ -172,17 +171,14 @@ const loadToaster = () => {
         return;
     }
     const toastElList = toastTemporary.querySelectorAll(`div`);
-    console.info(toastElList);
     toastElList.forEach((toastEl) => {
         const clonedToast = toastEl.cloneNode(true);
-        toatser.showToastNode(clonedToast);
+        toaster.showToastNode(clonedToast);
         toastEl.remove();
     });
 };
 
-export { toatser, loadToaster, TOAST_TYPE };
-
-
+export { toaster, loadToaster, TOAST_TYPE };
 ```
 
 ## View
@@ -212,7 +208,6 @@ resources\views\toaster\toasts.blade.php
 @if (session()->has('toaster'))
 {{ session()->forget('toaster') }}
 @endif
-
 ```
 
 ## Config (Dasboard)
@@ -220,13 +215,12 @@ resources\views\toaster\toasts.blade.php
 resources\js\toaster.js
 
 ```javascript
-import { toatser } from "../plugins/toaster";
+import { loadToaster } from "../plugins/toaster";
 
 window.addEventListener("DOMContentLoaded", () => {
-    toatser();
+    loadToaster();
     // another code...
 });
- 
 ```
 
 resources\views\layouts\dashboard\dashboard-layout.blade.php
@@ -261,7 +255,6 @@ class TagController extends Controller
     }
 
 }
-
 ```
 
 ## Ref
@@ -273,5 +266,3 @@ class TagController extends Controller
 - https://github.com/PeytonRG/BootstrapToaster
 
 - https://www.designcise.com/web/tutorial/how-to-remove-all-elements-returned-by-javascripts-queryselectorall-method
-
-
