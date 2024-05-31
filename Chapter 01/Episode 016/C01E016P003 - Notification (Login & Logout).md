@@ -1,7 +1,5 @@
 # C01E016P003 - Notification (Login & Logout)
 
-
-
 ## JS
 
 resources\js\layouts\auth.js
@@ -12,7 +10,6 @@ import { loadToaster } from "../plugins/toaster";
 window.addEventListener("DOMContentLoaded", () => {
     loadToaster();
 });
-
 ```
 
 ## Layout
@@ -48,8 +45,6 @@ export default defineConfig({
 });
 ```
 
-
-
 ## Login
 
 app\Http\Controllers\Auth\LoginController.php
@@ -74,7 +69,6 @@ class LoginController extends Controller
         return redirect()->intended(route("dashboard.home", absolute: false));
     }
 }
-
 ```
 
 app\Http\Requests\Auth\LoginRequest.php
@@ -91,12 +85,22 @@ use Illuminate\Foundation\Http\FormRequest;
 class LoginRequest extends FormRequest
 {
 
+    public function authenticate()
+    {
+        $validated = $this->validated();
+        if (!Auth::attempt($validated)) {
+            Toaster::error("Login", trans('auth.failed'));
+            throw ValidationException::withMessages([
+                'email' => trans('auth.failed'),
+            ]);
+        }
+    }
+
     protected function failedValidation(Validator $validator)
     {
         Toaster::error('Validation', summarizeValidation($validator));
     }
 }
-
 ```
 
 ## Logout
@@ -129,7 +133,6 @@ class LogoutController extends Controller
         return redirect()->intended(route('auth.login'));
     }
 }
-
 ```
 
 
